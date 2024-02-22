@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Grid xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticeApp.Comps.Grids.GrridComp"
+             x:Name="grid1"
+             RowDefinitions="*,*">
+
+    <Label Grid.Row="0"
+         x:Name="lbl1"
+         Text="{Binding Label1Change, Source={x:Reference grid1}}"
+         VerticalOptions="Center" 
+         HorizontalOptions="Center" />
+
+    <Label Grid.Row="1"
+           
+          x:Name="lbl2"
+            Text="User"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+</Grid>

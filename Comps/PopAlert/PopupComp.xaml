@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               x:Class="PracticeApp.Comps.PopAlert.PopupComp"
+               xmlns:btn="clr-namespace:PracticeApp.Comps.Buttons"
+               xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+               CanBeDismissedByTappingOutsideOfPopup="False">
+    <VerticalStackLayout MaximumWidthRequest="250" MaximumHeightRequest="200">
+        <Label x:Name="message" />
+        <btn:ButtonComp x:Name="close" Text="OK" Click="close_Click"/>
+    </VerticalStackLayout>
+</toolkit:Popup>

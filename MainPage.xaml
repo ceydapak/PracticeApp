@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:en="clr-namespace:PracticeApp.Comps.Entrys"
+             xmlns:btn="clr-namespace:PracticeApp.Comps.Buttons"
+             xmlns:grid="clr-namespace:PracticeApp.Comps.Grids"
+             x:Class="PracticeApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout  Padding="30,0" Spacing="25">
+            <en:EntryComp x:Name="entry1" EntryChanged="entry1_EntryChanged"/>
+            <en:EntryComp x:Name="entry2"  />
+            <btn:ButtonComp x:Name="OKBtn" Text="Validate" Click="OKBtn_Click" />
+            <Label x:Name="Validate" TextColor="Red" FontSize="13"/>
+            <grid:GrridComp x:Name="grid1" TextChange="True" />
+            <grid:GrridComp x:Name="grid2" TextChange="True" />
+            <btn:ButtonComp x:Name="PopUp" Click="PopUp_Click" />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
